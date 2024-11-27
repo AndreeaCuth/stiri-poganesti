@@ -1,0 +1,11 @@
+
+---
+export const { news } = Astro.props;
+---
+<ul>
+  {news.map((item) => (
+    <li>
+      <a href={item.link}>{item.title}</a>
+    </li>
+  ))}
+</ul>

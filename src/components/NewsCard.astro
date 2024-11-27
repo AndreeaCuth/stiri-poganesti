@@ -1,0 +1,10 @@
+
+---
+export const { title, summary, image, link } = Astro.props;
+---
+<article>
+  <img src={image} alt={title} />
+  <h3>{title}</h3>
+  <p>{summary}</p>
+  <a href={link}>Citește mai mult</a>
+</article>
